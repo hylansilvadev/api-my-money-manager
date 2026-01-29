@@ -1,6 +1,6 @@
 {
   "name": "api-my-money-manager",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "backend for my money manager application",
   "author": "Hylan Silva <hylansilva@outlook.com>",
   "private": true,
@@ -70,6 +70,7 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "coverageProvider": "v8",
     "collectCoverageFrom": [
       "**/*.(t|j)s",
       "!**/*.module.ts",
@@ -77,9 +78,14 @@
       "!**/*.entity.ts",
       "!**/*.interface.ts",
       "!**/*.enum.ts",
+      "!**/index.ts",
       "!main.ts"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
   }
 }
