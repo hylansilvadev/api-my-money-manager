@@ -1,6 +1,6 @@
 {
   "name": "api-my-money-manager",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "backend for my money manager application",
   "author": "Hylan Silva <hylansilva@outlook.com>",
   "private": true,
