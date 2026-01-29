@@ -36,7 +36,7 @@ describe('CreateTransactionUseCase', () => {
   it('should create a new transaction', async () => {
     const createTransactionDto: CreateTransactionDto = {
       description: 'Lunch',
-      amount: 25.0,
+      amount: 25,
       date: new Date(),
       type: TransactionType.EXPENSE,
       categoryId: 'cat-uuid',

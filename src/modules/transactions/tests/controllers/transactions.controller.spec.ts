@@ -63,7 +63,7 @@ describe('TransactionsController', () => {
     it('should create a transaction', async () => {
       const dto: CreateTransactionDto = {
         description: 'Lunch',
-        amount: 25.0,
+        amount: 25,
         date: new Date(),
         type: TransactionType.EXPENSE,
         categoryId: 'cat-uuid',
